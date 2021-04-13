@@ -1,17 +1,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    width: auto;
 }
 .container {
     display: flex;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.nav {
-    padding: 0px 20px 0px 20px;
-}
+
 .leftAlign {
     float: left;
 }
@@ -43,17 +42,14 @@ li a:hover{
 .googleLogo {
     width: 272px; 
     height: 92px;
-    padding-top: 10.5%;
+    margin-top: 65%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
+    padding-bottom: 5%;
+
 }
 .searchBox {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
+    margin: auto;
+    padding-bottom: 15%;
 }
 form {
     margin: auto;
@@ -99,7 +95,58 @@ input {
     background-size: contain;
     cursor: pointer;
 }
+.center {
+    margin: auto;
+}
+.googleButtons{
+    text-align: center;
+}
+.searchButton {
+    background-color:#f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+.searchButton:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.featuredLink {
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+}
+.featuredLink a {
+    text-decoration: none;
+}
 .footerImg {
     width: 12.25px;
     height: 14px;
+}
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+}
+footer li {
+    color: darkgrey;
+}
+.footerRight {
+    float: right;
+    padding-right: 20px;
+}
+
+.footerLeft {
+    float: left;
+    padding-left: 20px;
 }
