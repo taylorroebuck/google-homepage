@@ -1,48 +1,53 @@
+
 <head>
-    <title>Google Homepage</title>
-    <style>
-        body{
-            height: 100%;
-            margin: 0;
-            padding: 10;
-            display: block;
-            min-width: 400px;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            align-items: center;
-            height: 100%;
-            margin-top: auto;
-        }
-        .Ne6nSd {
-            display: flex;
-            align-items: center;
-            padding: 6px;
-        }
-        /* .n1xJcf {
-            height: 60px;
-        }
-        .o3j99 {
-            flex-shrink: 0;
-            box-sizing: border-box; */
-        }
-        /* .googleImg{
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: contain;
-        object-position: center bottom;
-        width: auto;
-        } */
-    </style>
+   <meta charset="utf-8">
+   <title>Google Homepage</title>
+   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="o3j99 n1xJcf Ne6nSd" style="padding: 12%;">
-            <a href="https://www.google.com/" target="_blank">
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" class="googleImg" style="width:272; height: 92;">
-            </a>
+        <header>
+            <nav class="nav">
+                <ul class="leftAlign">
+                    <li><a href="https://about.google.com" target="_blank">About</a></li>
+                    <li><a href="https://store.google.com" target="_blank">Store</a></li>
+                </ul>
+                <ul class="rightAlign">
+                    <li><a href="https://gmail.com" target="_blank">Gmail</a></li>
+                    <li><a href="https://images.google.com/?gws_rd=ssl" target="_blank">Images</a></li>
+                    <li><a href="https://www.google.com/intl/en/about/products" target="_blank"><img src="/assets/squares-logo.png" class="logo"></a></li>
+                    <li><a><img class="avatar" src="https://lh3.googleusercontent.com/ogw/ADGmqu8NpyJ_pjQM0DctsWxJgJyAE9FBbmkkqO30sJtC3A=s64-c-mo"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="center">
+            <img class="googleLogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </main>
+        <div class="searchBox">
+            <form>
+                <input type="text" id="icons" maxlength="2048" value aria-label="Search">
+                <button type="button" class="micButton"></button>
+                <button type="button" class="magButton"></button>
+            </form>
         </div>
+        <ul class="center">
+            <li><button>Google Search</button></li>
+            <li><button>I'm Feeling Lucky</button></li>
+        </ul>
+        <p class="featuredLink"><a href="https://www.google.com/url?q=https://artsandculture.google.com/story/EAWBV8wSttrp6g%3Futm_source%3Dgoogle%26utm_medium%3Dhppromo%26utm_campaign%3DMMMUS&source=hpp&id=19023597&ct=3&usg=AFQjCNEgEWMJkSeUn8u2PLUjOblg1eAEng&sa=X&ved=0ahUKEwjttqLq8PnvAhVIpZ4KHbejCDAQ8IcBCBA">Discover Black innovators and their contributions in electronic music.</a></p>
+        <footer>
+            <ul class="footerLeft">
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search works</li>
+            </ul>
+            <p><a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="><img class="footerImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="carbon neutral">Carbon neutral since 2007</a></p>
+            <ul class="footerRight">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
+        </footer>
     </div>
 </body>
